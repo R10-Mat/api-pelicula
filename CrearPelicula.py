@@ -42,7 +42,7 @@ def lambda_handler(event, context):
                 "Detalle": str(e) 
             }
         }
-        print(json.dumps(e))
+        print(json.dumps(respuesta_errada))
         return {
             'statusCode': 500,
             'error': 'error interno',
